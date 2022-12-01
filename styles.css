@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #262626;
+}
+
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fafafa;
+}
+
+/* column 1 */
+.column1{
+    flex: 20%;
+    border-right: 1px solid #DBDBDB;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 25px 80px 40px 30px;
+    text-align: left;
+    background-color: #fff;
+    position: fixed;
+}
+
+.column1 .logo img{
+    width: 120px;
+    padding-bottom: 25px;
+}
+
+.column1 .nav-menu, .more{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.icons{
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+.icons, .icon-label{
+    padding: 12px 0 20px;
+}
+
+.nav-menu .icons img{
+    height: 28px;
+    width: 28px;
+    object-fit: cover;
+    border: 1px transparent #000;
+    border-radius: 50%;
+}
+
+.more{
+    padding-top: 35px;
+}
+
+/* column 2 */
+.column2 {
+    display: flex;
+    flex: 80%;
+    justify-content: center;
+    padding: 30px;
+}
+
+.column2 .stories{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 450px;
+    background-color: #fff;
+    padding: 20px 0 20px 5px;
+    border: 1px solid #DBDBDB;
+    border-radius: 10px;
+}
+
+.column2 .stories img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 3px solid palevioletred;
+    border-radius: 50%;
+}
+
+.stories span{
+    font-size: 12px;
+    text-align: center;
+    display: block;
+}
+
+/* Feed Section */
+.feed .card{
+    background-color: #fff;
+    width: 450px;
+    height: 850px;
+    margin: 20px 0;
+    border: 1px solid #DBDBDB;
+    border-radius: 10px;
+}
+
+.top-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #DBDBDB;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0 20px;
+}
+
+.top-card>div>img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 3px solid palevioletred;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.profile-pic>div>p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profile-pic>div>span{
+    font-size: 12px;
+}
+
+.feed .post{
+    left: 0;
+    right: 0;
+    width: 450px;
+    height: 580px;
+    vertical-align: baseline;
+    overflow: hidden;
+}
+
+.feed .post img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.comment-card{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.comment-card .comment-icons{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.left-icons i, .right-icons i{
+    font-size: 20px;
+}
+
+.left-icons i{
+    margin-right: 10px;
+}
+
+.caption{
+    padding: 0 10px;
+}
+
+.caption .likes, .caption p{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+.caption span{
+    font-weight: 400;
+}
+
+.caption .view, .caption .time{
+    color: #8E8E8E;
+}
+
+.caption .time{
+    font-size: 12px;
+}
+
+.comment-input-field{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    border-top: 1px solid #DBDBDB;
+    padding: 8px 12px;
+    margin-top: 15px;
+}
+
+.comment-input-field>a>i{
+    font-size: 20px;
+}
+
+.comment-input-field input{
+    width: 320px;
+    outline: none;
+    border: transparent;
+}
+
+.comment-input-field input:placeholder-shown{
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.comment-input-field button{
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    color: #B3DBFF;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
