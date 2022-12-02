@@ -243,8 +243,7 @@
 /* User profile and user suggestions (third column) */
 .column2 .column2-right{
     width: 400px;
-    border: 1px solid black;
-    padding: 50px 30px;
+    padding: 50px 40px;
 }
 
 .column2-right .user{
