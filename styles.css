@@ -14,7 +14,7 @@
     background-color: #fafafa;
 }
 
-/* column 1 */
+/* Navigation bar (first column) */
 .column1{
     flex: 20%;
     border-right: 1px solid #DBDBDB;
@@ -59,14 +59,17 @@
     padding-top: 35px;
 }
 
-/* column 2 */
+/* News Feed (middle section, second column) */
 .column2 {
     display: flex;
     flex: 80%;
-    justify-content: center;
+    justify-content: flex-end;
+    align-content: center;
     padding: 30px;
+    margin: 0 50px;
 }
 
+/* view stories section */
 .column2 .stories{
     display: flex;
     justify-content: space-around;
@@ -93,7 +96,7 @@
     display: block;
 }
 
-/* Feed Section */
+/* news feed Section */
 .feed .card{
     background-color: #fff;
     width: 450px;
@@ -144,6 +147,16 @@
     height: 580px;
     vertical-align: baseline;
     overflow: hidden;
+}
+
+.feed .post .vid-post{
+    left: 0;
+    right: 0;
+    width: 450px;
+    height: 580px;
+    vertical-align: baseline;
+    overflow: hidden;
+    background-color: #262626;
 }
 
 .feed .post img{
@@ -225,4 +238,87 @@
     background-color: #fff;
     font-size: 16px;
     font-weight: 600;
+}
+
+/* User profile and user suggestions (third column) */
+.column2 .column2-right{
+    width: 400px;
+    border: 1px solid black;
+    padding: 50px 30px;
+}
+
+.column2-right .user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.column2-right .user .user-profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.column2-right .user .user-profile img{
+    width: 50px;
+    height: 50px;
+    border: 2px transparent #8E8E8E;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-profile-text p, span, .suggestions-container .suggestions p, span{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.user-profile-text span, .suggestions p{
+    color: #8E8E8E;
+}
+
+.user-profile-text .follow{
+    font-size: 12px;
+}
+
+.column2-right .option{
+    font-size: 12px;
+    color: #0095F6;
+    font-weight: 700;
+}
+
+.column2 .suggestions-container .suggestions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.column2-right .suggestions-container .user .user-profile img{
+    width: 40px;
+    height: 40px;
+    border: 2px transparent #8E8E8E;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.suggestions-container .user{
+    margin-bottom: 15px;
+}
+
+.column2 .footer span, .copyright span{
+    font-size: 12px;
+    font-weight: 400;
+    color: #CAC7D1;
+    margin-left: 5px;
+}
+
+.column2 .footer{
+    margin-bottom: 20px;
+}
+
+.fa-circle{
+    font-size: 2px;
+    color: #CAC7D1;
+    vertical-align: middle;
 }
