@@ -21,7 +21,7 @@
     height: 100vh;
     top: 0;
     left: 0;
-    padding: 25px 80px 40px 30px;
+    padding: 25px 20px 30px;
     text-align: left;
     background-color: #fff;
     position: fixed;
@@ -32,19 +32,29 @@
     padding-bottom: 25px;
 }
 
+.column1 .logo a, .column1 a{
+    text-decoration: none;
+}
+
 .column1 .nav-menu, .more{
     display: flex;
     align-items: center;
     align-content: center;
+    padding: 5px 65px 5px 10px;
+    margin-bottom: 20px;
+}
+
+.column1 .nav-menu:hover, .more:hover{
+    border: 1px transparent #fafafa;
+    border-radius: 30px;
+    background-color: #fafafa;
+    padding: 5px 65px 5px 10px;
+    margin-bottom: 20px;
 }
 
 .icons{
     margin-right: 20px;
     font-size: 22px;
-}
-
-.icons, .icon-label{
-    padding: 12px 0 20px;
 }
 
 .nav-menu .icons img{
@@ -56,7 +66,7 @@
 }
 
 .more{
-    padding-top: 35px;
+    margin-top: 55px;
 }
 
 /* News Feed (middle section, second column) */
@@ -77,26 +87,38 @@
     align-content: center;
     width: 450px;
     background-color: #fff;
-    padding: 20px 0 20px 5px;
+    padding: 10px 0 30px 5px;
     border: 1px solid #DBDBDB;
     border-radius: 10px;
 }
 
-.column2 .stories img{
+.stories .image-story-container{
     width: 60px;
     height: 60px;
-    object-fit: cover;
-    border: 3px solid palevioletred;
+    background-image: linear-gradient(120deg, #FFB800, #EB8BE5, #FF1358, #FFCB5B, #FF9500, #FF81A7, #EB8BE5, #E8019A);
     border-radius: 50%;
 }
 
-.stories span{
+.column2 .stories img{
+    width: 54px;
+    height: 54px;
+    object-fit: cover;
+    margin: 3px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.image-story-container .stories-span{
+    display: block;
     font-size: 12px;
     text-align: center;
-    display: block;
 }
 
 /* news feed Section */
+.stories a, .profile-pic a, .comment-icons a, .caption a{
+    text-decoration: none;
+}
+
 .feed .card{
     background-color: #fff;
     width: 450px;
@@ -114,16 +136,24 @@
     border-bottom: 1px solid #DBDBDB;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    padding: 0 20px;
+    padding: 0 20px 0 10px;
 }
 
-.top-card>div>img{
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    border: 3px solid palevioletred;
+.top-card-img{
+    width: 46px;
+    height: 46px;
+    background-image: linear-gradient(120deg, #FFB800, #EB8BE5, #FF1358, #FFCB5B, #FF9500, #FF81A7, #EB8BE5, #E8019A);
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.top-card-img img{
+    width: 42px;
+    height: 42px;
+    object-fit: cover;
+    border: 2px solid #fff;
+    margin: 2px;
+    border-radius: 50%;
 }
 
 .profile-pic {
@@ -134,6 +164,11 @@
 .profile-pic>div>p{
     font-size: 14px;
     font-weight: 600;
+}
+
+.top-card-text .fa-circle{
+    font-size: 4px;
+    color: #262626;
 }
 
 .profile-pic>div>span{
@@ -181,6 +216,10 @@
 
 .left-icons i{
     margin-right: 10px;
+}
+
+.comment-icons .left-icons i:hover, .comment-icons .right-icons i:hover{
+    color: #8E8E8E;
 }
 
 .caption{
@@ -241,9 +280,13 @@
 }
 
 /* User profile and user suggestions (third column) */
+.user-profile a, .user-profile-text a, .option a, .suggestions-container a{
+    text-decoration: none;
+}
+
 .column2 .column2-right{
     width: 400px;
-    padding: 50px 40px;
+    padding: 50px 30px;
 }
 
 .column2-right .user{
@@ -280,7 +323,7 @@
     font-size: 12px;
 }
 
-.column2-right .option{
+.column2-right .option a{
     font-size: 12px;
     color: #0095F6;
     font-weight: 700;
@@ -305,19 +348,30 @@
     margin-bottom: 15px;
 }
 
+.column2 .footer{
+    margin-bottom: 20px;
+    width: 350px;
+}
+
+.column2 .footer a{
+    text-decoration: none;
+}
+
+.column2 .footer a:hover{
+    text-decoration: underline;
+    color: #CAC7D1;
+}
+
 .column2 .footer span, .copyright span{
     font-size: 12px;
     font-weight: 400;
     color: #CAC7D1;
-    margin-left: 5px;
-}
-
-.column2 .footer{
-    margin-bottom: 20px;
+    margin-left: 1px;
 }
 
 .fa-circle{
     font-size: 2px;
     color: #CAC7D1;
+    margin-left: 1px;
     vertical-align: middle;
 }
